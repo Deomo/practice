@@ -1,0 +1,60 @@
+.out1{
+    width:120px;
+    height:120px;
+    border:1px solid red;
+    border-radius:50%;
+    position:relative;
+    
+  }
+  .out2{
+    width:119px;
+    height:60px;
+    border:1px solid red;
+    border-radius:0 0 119px 119px;
+    margin-top:60px;
+    background-color: red;
+  }
+  .cr1{
+    width:58px;
+    height:58px;
+    border:1px solid red;
+    border-radius:50%;
+    float:left;
+    background-color: red;
+    
+  }
+  .cr2{
+    width:58px;
+    height:58px;
+    border:1px solid white;
+    border-radius:50%;
+    float:right;
+    background-color: #fff;
+  }
+  
+  .smcr1{
+    width:10px;
+    height:10px;
+    border:1px solid white;
+    border-radius:50%;
+    margin:25px;
+    background-color: #fff;
+  }
+  
+  .smcr2{
+    width:10px;
+    height:10px;
+    border:1px solid red;
+    border-radius:50%;
+    margin:25px;
+    background-color: red;
+  }
+  
+  .circle{
+    width:120px;
+    position:absolute;
+    margin-top:-31px;
+    margin-left:-1px;
+  }
+  
+/****************************纯圆画法*************************/  
