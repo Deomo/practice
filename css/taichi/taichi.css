@@ -1,9 +1,35 @@
+/*********动画*********/
+@keyframes spin1 {
+    from{
+        transform:rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes spin2 {
+    from{
+        transform:rotate(0deg);
+    }
+    to{
+        transform: rotate(-360deg);
+    }
+}
 
 /****************************纯圆画法*************************/  
 .out1{
+    /*animation-name: spin1;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;*/
+    
+    animation: spin1 1.5s infinite linear;
+}
+
+.out1{
     width:120px;
     height:120px;
-    border:2px solid red;
+    border:2px solid black;
     border-radius:50%;
     position:relative;
     
@@ -11,18 +37,18 @@
   .out2{
     width:119px;
     height:60px;
-    border:1px solid red;
+    border:1px solid black;
     border-radius:0 0 119px 119px;
     margin-top:60px;
-    background-color: red;
+    background-color: black;
   }
   .cr1{
     width:58px;
     height:58px;
-    border:1px solid red;
+    border:1px solid black;
     border-radius:50%;
     float:left;
-    background-color: red;
+    background-color: black;
     
   }
   .cr2{
@@ -46,10 +72,10 @@
   .smcr2{
     width:10px;
     height:10px;
-    border:1px solid red;
+    border:1px solid black;
     border-radius:50%;
     margin:25px;
-    background-color: red;
+    background-color: black;
   }
   
   .circle{
@@ -65,11 +91,15 @@
 #taichi {
     width:96px;
     height:48px;
-    border:2px solid red;
-    border-bottom:50px solid red;
+    border:2px solid black;
+    border-bottom:50px solid black;
     box-sizing:content-box;
     border-radius:50%; 
     position:relative;
+    animation-name: spin2;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
   }
   
   #taichi::before{
@@ -77,7 +107,7 @@
     position:absolute;
     width:12px;
     height:12px;
-    border:18px solid red;
+    border:18px solid black;
     border-radius:50%; 
     box-sizing:content-box;
     top:50%;
@@ -95,7 +125,7 @@
     box-sizing:content-box;
     top:50%;
     left:50%;
-   background-color: red;
+   background-color: black;
   }
   
 /****************************伪类画法*************************/ 
