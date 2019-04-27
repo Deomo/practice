@@ -3,7 +3,7 @@
 .out1{
     width:120px;
     height:120px;
-    border:1px solid red;
+    border:2px solid red;
     border-radius:50%;
     position:relative;
     
@@ -72,7 +72,7 @@
     position:relative;
   }
   
-  #taichi:before{
+  #taichi::before{
     content:"";
     position:absolute;
     width:12px;
@@ -85,7 +85,7 @@
     background-color: #fff;
    
   }
-  #taichi:after{
+  #taichi::after{
     content:"";
     position:absolute;
     width:12px;
